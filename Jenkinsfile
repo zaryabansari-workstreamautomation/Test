@@ -1,6 +1,13 @@
 pipeline {
+    
     agent any
+    
+    tools {
+        ant 'Ant12'
+        nodejs 'Node18'
+    }
 
+    
     stages {
         stage('Build') {
             steps {
